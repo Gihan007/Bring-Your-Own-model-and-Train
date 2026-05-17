@@ -1,0 +1,33 @@
+{
+  "job_id": "case-sklearn-inferred-framework",
+  "tenant_id": "tenant-demo",
+  "model_id": "credit-risk-classifier",
+  "model_gcs_path": "samples/cases/sklearn_inferred_framework/model.joblib",
+  "dataset_gcs_path": "samples/cases/sklearn_inferred_framework/validation.csv",
+  "requirements_gcs_path": "samples/cases/sklearn_inferred_framework/requirements.txt",
+  "framework": null,
+  "task_type": "classification",
+  "target_column": "Risk",
+  "model_type": "LogisticRegression",
+  "numeric_features": [
+    "Age",
+    "Job",
+    "Credit amount",
+    "Duration"
+  ],
+  "categorical_features": [
+    "Sex",
+    "Housing",
+    "Saving accounts",
+    "Checking account",
+    "Purpose"
+  ],
+  "model_params": {
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "dimensions": {
+    "purpose": "happy path sklearn classification"
+  }
+}

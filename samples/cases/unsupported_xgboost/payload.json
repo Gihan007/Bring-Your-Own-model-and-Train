@@ -1,0 +1,19 @@
+{
+  "job_id": "case-unsupported-xgboost",
+  "tenant_id": "tenant-demo",
+  "model_id": "unsupported-xgboost-model",
+  "model_gcs_path": "samples/cases/unsupported_xgboost/model.xgb",
+  "dataset_gcs_path": "samples/cases/unsupported_xgboost/validation.csv",
+  "requirements_gcs_path": "samples/cases/unsupported_xgboost/requirements.txt",
+  "framework": "xgboost",
+  "task_type": "classification",
+  "target_column": "target",
+  "numeric_features": [
+    "x1"
+  ],
+  "categorical_features": [],
+  "model_params": {},
+  "dimensions": {
+    "purpose": "expected unsupported framework failure"
+  }
+}

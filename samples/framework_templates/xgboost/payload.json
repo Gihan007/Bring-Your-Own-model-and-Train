@@ -1,0 +1,19 @@
+{
+  "job_id": "real-xgboost-test-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "xgboost-model",
+  "model_gcs_path": "replace-with-upload-or-local-path/model.xgb",
+  "dataset_gcs_path": "replace-with-upload-or-local-path/validation.csv",
+  "requirements_gcs_path": "replace-with-upload-or-local-path/requirements.txt",
+  "framework": "xgboost",
+  "task_type": "classification",
+  "target_column": "target",
+  "numeric_features": ["feature_1", "feature_2"],
+  "categorical_features": [],
+  "model_params": {},
+  "dimensions": {
+    "class_names": ["0", "1"],
+    "encoded_feature_columns": ["feature_1", "feature_2"]
+  }
+}
+

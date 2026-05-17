@@ -1,0 +1,19 @@
+{
+  "job_id": "real-onnx-test-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "onnx-model",
+  "model_gcs_path": "replace-with-upload-or-local-path/model.onnx",
+  "dataset_gcs_path": "replace-with-upload-or-local-path/validation.csv",
+  "requirements_gcs_path": "replace-with-upload-or-local-path/requirements.txt",
+  "framework": "onnx",
+  "task_type": "classification",
+  "target_column": "target",
+  "numeric_features": ["feature_1", "feature_2"],
+  "categorical_features": [],
+  "model_params": {},
+  "dimensions": {
+    "onnx_input_name": "input",
+    "class_names": ["0", "1"]
+  }
+}
+

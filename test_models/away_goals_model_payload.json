@@ -1,0 +1,36 @@
+{
+  "job_id": "user-away-goals-model-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "away-goals-random-forest",
+  "model_gcs_path": "test_models/away_goals_model.joblib",
+  "dataset_gcs_path": "test_models/away_goals_model_validation.csv",
+  "requirements_gcs_path": "test_models/away_goals_model_requirements.txt",
+  "framework": "sklearn",
+  "task_type": "classification",
+  "target_column": "away_goals",
+  "model_type": "RandomForestClassifier",
+  "numeric_features": [
+    "home_team_strength",
+    "away_team_strength",
+    "home_team_defense",
+    "away_team_defense",
+    "home_xG",
+    "away_xG",
+    "xG_difference",
+    "home_form",
+    "away_form",
+    "h2h_home_win_rate",
+    "h2h_away_win_rate",
+    "h2h_draw_rate",
+    "goal_ratio",
+    "xG_ratio",
+    "day_of_week",
+    "month"
+  ],
+  "categorical_features": [],
+  "model_params": {},
+  "dimensions": {
+    "note": "Fake validation data generated to exercise uploaded away_goals_model.joblib."
+  }
+}
+

@@ -1,0 +1,8 @@
+/.venv/
+.runtime_cache/
+uploads/
+.pytest_cache/
+__pycache__/
+**/__pycache__/
+samples/model.joblib
+samples/validation.csv

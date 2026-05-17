@@ -1,0 +1,19 @@
+{
+  "job_id": "real-huggingface-test-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "huggingface-text-classifier",
+  "model_gcs_path": "replace-with-upload-or-local-path/hf_model_dir.zip",
+  "dataset_gcs_path": "replace-with-upload-or-local-path/validation.csv",
+  "requirements_gcs_path": "replace-with-upload-or-local-path/requirements.txt",
+  "framework": "huggingface",
+  "task_type": "classification",
+  "target_column": "label",
+  "numeric_features": [],
+  "categorical_features": [],
+  "model_params": {},
+  "dimensions": {
+    "hf_task": "text-classification",
+    "text_column": "text"
+  }
+}
+

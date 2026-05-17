@@ -1,0 +1,9 @@
+rooms,area_sqft,age_years,location,condition,price
+2,850,20,suburb,fair,210000
+3,1200,12,suburb,good,310000
+4,1800,8,city,good,520000
+1,650,30,city,fair,260000
+5,2400,4,city,excellent,760000
+3,1400,18,rural,good,230000
+4,2100,6,suburb,excellent,610000
+2,900,25,rural,fair,160000

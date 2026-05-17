@@ -1,0 +1,15 @@
+# Optional heavy runtime dependencies for testing every adapter locally.
+# In production these belong in per-job requirements.txt files, not necessarily
+# in the API service environment.
+
+-r requirements.txt
+
+xgboost==2.1.1
+onnxruntime==1.18.1
+transformers==4.44.2
+torch==2.3.1
+
+# TensorFlow support on Windows/Python can vary by version and machine.
+# Install a version compatible with your Python/runtime if this one fails.
+tensorflow==2.16.1
+

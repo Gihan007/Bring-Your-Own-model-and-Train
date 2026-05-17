@@ -1,0 +1,19 @@
+{
+  "job_id": "user-test-fixtures-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "test-fixtures-sklearn-pipeline",
+  "model_gcs_path": "test_models/test-fixtures_model.pkl",
+  "dataset_gcs_path": "test_models/test-fixtures_dataset (1).csv",
+  "requirements_gcs_path": "test_models/test_fixtures_requirements.txt",
+  "framework": "sklearn",
+  "task_type": "classification",
+  "target_column": "label",
+  "model_type": "Pipeline",
+  "numeric_features": ["feat_a", "feat_b", "feat_c", "feat_d"],
+  "categorical_features": ["gender", "age_group"],
+  "model_params": {},
+  "dimensions": {
+    "note": "Provided test-fixtures sklearn Pipeline. The model already includes preprocessing."
+  }
+}
+

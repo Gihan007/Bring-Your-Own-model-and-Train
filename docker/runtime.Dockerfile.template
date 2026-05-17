@@ -1,0 +1,18 @@
+# This is the per-job validation runtime image shape.
+# The prototype creates the runtime plan; production should build/cache this image
+# by python_version + requirements.txt hash.
+
+ARG PYTHON_VERSION=3.10
+FROM python:${PYTHON_VERSION}-slim
+
+WORKDIR /workspace
+
+COPY base-runtime-requirements.txt /workspace/base-runtime-requirements.txt
+RUN pip install --no-cache-dir -r /workspace/base-runtime-requirements.txt
+
+COPY requirements.txt /workspace/requirements.txt
+RUN if [ -s /workspace/requirements.txt ]; then pip install --no-cache-dir -r /workspace/requirements.txt; fi
+
+COPY app /workspace/app
+
+ENTRYPOINT ["python", "-m", "app.runtime_entrypoint"]

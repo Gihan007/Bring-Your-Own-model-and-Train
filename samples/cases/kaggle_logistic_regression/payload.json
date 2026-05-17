@@ -1,0 +1,23 @@
+{
+  "job_id": "kaggle-logistic-regression-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "kaggle-samarthpujari-logistic-regression",
+  "model_gcs_path": "samples/cases/kaggle_logistic_regression/logistic_regression_model.pkl",
+  "dataset_gcs_path": "samples/cases/kaggle_logistic_regression/validation.csv",
+  "requirements_gcs_path": "samples/cases/kaggle_logistic_regression/requirements.txt",
+  "framework": "sklearn",
+  "task_type": "classification",
+  "target_column": "Target",
+  "model_type": "LogisticRegression",
+  "numeric_features": ["Feature1", "Feature2"],
+  "categorical_features": [],
+  "model_params": {
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "dimensions": {
+    "source": "kagglehub.model_download(\"samarthpujari/logistic-regression/scikitLearn/pkl_file\")",
+    "expected_original_sklearn_version": "1.2.2"
+  }
+}
+

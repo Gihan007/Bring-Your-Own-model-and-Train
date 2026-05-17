@@ -1,0 +1,26 @@
+{
+  "job_id": "demo-sklearn-joblib-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "credit-risk-model",
+  "model_gcs_path": "samples/model.joblib",
+  "dataset_gcs_path": "samples/validation.csv",
+  "requirements_gcs_path": "samples/requirements-sklearn.txt",
+  "framework": "sklearn",
+  "task_type": "classification",
+  "target_column": "Risk",
+  "model_type": "LogisticRegression",
+  "numeric_features": ["Age", "Job", "Credit amount", "Duration"],
+  "categorical_features": ["Sex", "Housing", "Saving accounts", "Checking account", "Purpose"],
+  "model_params": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "fit_intercept": true,
+    "max_iter": 1000,
+    "random_state": 42,
+    "solver": "lbfgs"
+  },
+  "dimensions": {
+    "expected_rows": 1000
+  }
+}
+

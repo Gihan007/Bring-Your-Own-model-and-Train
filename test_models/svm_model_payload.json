@@ -1,0 +1,19 @@
+{
+  "job_id": "user-svm-model-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "svm-titanic-model",
+  "model_gcs_path": "test_models/svm_model.joblib",
+  "dataset_gcs_path": "test_models/svm_model_validation.csv",
+  "requirements_gcs_path": "test_models/svm_model_requirements.txt",
+  "framework": "sklearn",
+  "task_type": "classification",
+  "target_column": "Survived",
+  "model_type": "Pipeline",
+  "numeric_features": ["Pclass", "Age", "SibSp", "Parch", "Fare", "is_Cabin"],
+  "categorical_features": ["Sex", "Embarked"],
+  "model_params": {},
+  "dimensions": {
+    "note": "Simple fake Titanic-like validation dataset for svm_model.joblib."
+  }
+}
+

@@ -1,0 +1,18 @@
+{
+  "job_id": "user-knn-model-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "knn-titanic-model",
+  "model_gcs_path": "test_models/knn_model.joblib",
+  "dataset_gcs_path": "test_models/knn_model_10row_validation.csv",
+  "requirements_gcs_path": "test_models/knn_model_requirements.txt",
+  "framework": "sklearn",
+  "task_type": "classification",
+  "target_column": "Survived",
+  "model_type": "Pipeline",
+  "numeric_features": ["Pclass", "Age", "SibSp", "Parch", "Fare", "is_Cabin"],
+  "categorical_features": ["Sex", "Embarked"],
+  "model_params": {},
+  "dimensions": {
+    "note": "Small clean 10-row Titanic-like validation dataset for knn_model.joblib."
+  }
+}

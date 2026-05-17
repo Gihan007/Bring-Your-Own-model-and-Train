@@ -1,0 +1,33 @@
+{
+  "job_id": "case-failure-missing-target",
+  "tenant_id": "tenant-demo",
+  "model_id": "credit-risk-classifier",
+  "model_gcs_path": "samples/cases/failure_missing_target/model.joblib",
+  "dataset_gcs_path": "samples/cases/failure_missing_target/validation.csv",
+  "requirements_gcs_path": "samples/cases/failure_missing_target/requirements.txt",
+  "framework": "sklearn",
+  "task_type": "classification",
+  "target_column": "MissingRisk",
+  "model_type": "LogisticRegression",
+  "numeric_features": [
+    "Age",
+    "Job",
+    "Credit amount",
+    "Duration"
+  ],
+  "categorical_features": [
+    "Sex",
+    "Housing",
+    "Saving accounts",
+    "Checking account",
+    "Purpose"
+  ],
+  "model_params": {
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "dimensions": {
+    "purpose": "happy path sklearn classification"
+  }
+}

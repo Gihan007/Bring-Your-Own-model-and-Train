@@ -1,0 +1,25 @@
+{
+  "job_id": "case-sklearn-regression",
+  "tenant_id": "tenant-demo",
+  "model_id": "house-price-regressor",
+  "model_gcs_path": "samples/cases/sklearn_regression_pipeline/model.joblib",
+  "dataset_gcs_path": "samples/cases/sklearn_regression_pipeline/validation.csv",
+  "requirements_gcs_path": "samples/cases/sklearn_regression_pipeline/requirements.txt",
+  "framework": "sklearn",
+  "task_type": "regression",
+  "target_column": "price",
+  "model_type": "LinearRegression",
+  "numeric_features": [
+    "rooms",
+    "area_sqft",
+    "age_years"
+  ],
+  "categorical_features": [
+    "location",
+    "condition"
+  ],
+  "model_params": {},
+  "dimensions": {
+    "purpose": "happy path sklearn regression"
+  }
+}

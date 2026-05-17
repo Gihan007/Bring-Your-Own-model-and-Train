@@ -1,0 +1,18 @@
+{
+  "job_id": "real-pytorch-test-001",
+  "tenant_id": "tenant-demo",
+  "model_id": "pytorch-torchscript-model",
+  "model_gcs_path": "replace-with-upload-or-local-path/model.pt",
+  "dataset_gcs_path": "replace-with-upload-or-local-path/validation.csv",
+  "requirements_gcs_path": "replace-with-upload-or-local-path/requirements.txt",
+  "framework": "pytorch",
+  "task_type": "classification",
+  "target_column": "target",
+  "numeric_features": ["feature_1", "feature_2"],
+  "categorical_features": [],
+  "model_params": {},
+  "dimensions": {
+    "class_names": ["0", "1"]
+  }
+}
+
